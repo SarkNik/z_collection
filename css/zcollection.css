@@ -9,13 +9,14 @@ body {
 }
 
 .wrapper {
-    width: 90%;
-    max-width: 1240px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
+    max-width: 100%;
+    grid-template-columns:  1fr;
+    grid-template-areas: 
+    "header"
+    "current"
+    "past";
+    grid-gap: 1em;
 }
 
 .header {
@@ -55,3 +56,20 @@ p {
     font-weight: bold;
     padding-top: .5em;
 }       
+
+
+
+@media only screen and (min-width:500px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "current current"
+        "past past";
+    } 
+
+    .current {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
