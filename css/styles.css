@@ -4,7 +4,13 @@
 }
 
 body {
-    background: rgb(204, 143, 143);
+    background: #201C1B;
+}
+
+.header {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
 }
 
 .shoe_wrapper {
@@ -18,28 +24,40 @@ body {
 }
 
 .card {
-    background: white;
+    background: #97C6A4;
     text-decoration: none;
-    color: #444;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #132113;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     display: flex;
     flex-direction: column;
     min-height: 100%;
     position: relative;
     top: 0;
+    left: 0;
     transition: all .1s ease-in;
+    border-radius: 1em;
+    outline: 1px solid transparent;
 }
 
 .card:hover {
     top: -2px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); */
 }
 
+.sold {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+}
 
-/* typography */
+.sale {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+}
 
 .card h1 {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .card article {
@@ -50,6 +68,9 @@ body {
 img {
     max-width: 100%;
     height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 /* media queries */
